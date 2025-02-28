@@ -1,0 +1,14 @@
+diff --git a/script.py b/script.py
+index ccedaa4..77c3263 100644
+--- a/script.py
++++ b/script.py
+@@ -15,7 +15,8 @@ logging.basicConfig(
+         logging.FileHandler("server.log", encoding="utf-8")  # Запись в файл
+     ]
+ )
+-
++print("Hello World2!!!!")
++print("Hello World!!!")
+ app = FastAPI()
+ templates = Jinja2Templates(directory="templates")
+ 
