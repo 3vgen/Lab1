@@ -86,6 +86,12 @@ def get_logs(request: Request):
     return templates.TemplateResponse("logs.html", {"request": request})
 
 
+@app.get("/test_rout")
+def get_logs():
+    """Отдаёт HTML страницу с логами"""
+    return {"message": "success"}
+
+
 @app.get("/logs/live")
 def stream_logs():
     """Возвращает последние строки логов"""
