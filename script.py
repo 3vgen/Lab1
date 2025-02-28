@@ -15,6 +15,7 @@ logging.basicConfig(
         logging.FileHandler("server.log", encoding="utf-8")  # Запись в файл
     ]
 )
+print("Hello World2!!!!")
 print("Hello World!!!")
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
