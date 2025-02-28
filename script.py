@@ -112,5 +112,5 @@ def status():
     logging.info(f"[API] Использование памяти: {memory_usage:.2f} GB")
     return {"status": "running", "memory_usage_gb": round(memory_usage, 2)}
 
-
+print("some changes")
 logging.info("[Сервер] FastAPI сервер запущен 🚀")
